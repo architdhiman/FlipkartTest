@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FilterTests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.TestFilter">
+        <methods>
+          <include name="testInvalidMaxPriceFilter"/>
+        </methods>
+      </class> <!-- tests.TestFilter -->
+    </classes>
+  </test> <!-- FilterTests(failed) -->
+  <test thread-count="5" name="FilterTest(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.TestFilter">
+        <methods>
+          <include name="testStorageFilter"/>
+        </methods>
+      </class> <!-- tests.TestFilter -->
+    </classes>
+  </test> <!-- FilterTest(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

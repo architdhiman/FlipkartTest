@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "
+https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+<test name="FilterTests">
+	<groups>
+		<run>
+			<include name="smoke"/>
+		
+		</run>
+	</groups>
+	
+	<classes>
+		<class name="tests.TestFilter"/>
+	</classes>
+</test>
+<test name="FilterTest">
+	<groups>
+		<run>
+			<include name="regression"/>
+		
+		</run>
+	</groups>
+	
+	<classes>
+		<class name="tests.TestFilter"/>
+	</classes>
+</test>
+
+</suite>
